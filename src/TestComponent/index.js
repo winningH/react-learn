@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './index.module.css'
-import logo from '../logo.png'
+import logo from '../assets/logo.png'
 
 function formatUser(user) {
   return user.name + "-" + user.age
