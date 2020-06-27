@@ -4,6 +4,7 @@ import './App.css';
 // import ClassComponent from './pages/ClassComponent'
 import FunctionComponent from './pages/FunctionComponent'
 import SetStatePage from './pages/SetStatePage'
+import LifeCyclePage from './pages/LifeCyclePage'
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <ClassComponent /> */}
       <FunctionComponent />
       <SetStatePage />
-    </div>
+      <LifeCyclePage />
+    </div >
   );
 }
 
