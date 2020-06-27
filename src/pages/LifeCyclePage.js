@@ -17,26 +17,41 @@ export default class LifeCycelPage extends Component {
     console.log("constructor")
   }
 
-  UNSAFE_componentWillMount() {
-    console.log('componentWillMount');
+  static getDerivedStateFromProps(_props, state) {
+    console.log('getDerivedStateFromProps');
+    const {count} = state
+    return count > 5 ? {count: 0} : null
   }
+
+  // UNSAFE_componentWillMount() {
+  //   console.log('componentWillMount');
+  // }
 
   componentDidMount() {
     console.log('componentDidMount')
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
+  shouldComponentUpdate(_nextProps, nextState) {
     const { count } = nextState
     console.log('shouldComponentUpdate', nextState, this.state);
     return count !== 3
   }
 
-  UNSAFE_componentWillUpdate() {
-    console.log('componentWillUpdate');
+  // 在render之后，componentDidUpdate 之前
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    console.log('getSnapshotBeforeUpdate', prevProps, prevState );
+    // return null
+    return {
+      msg: 'from getSnapshotBeforeUpdate'
+    }
   }
 
-  componentDidUpdate() {
-    console.log('componentDidUpdate');
+  // UNSAFE_componentWillUpdate() {
+  //   console.log('componentWillUpdate');
+  // }
+
+  componentDidUpdate(_prevProps, _prevState, snapshot) {
+    console.log('componentDidUpdate', snapshot);
   }
 
   setCount = () => {
@@ -60,9 +75,10 @@ export default class LifeCycelPage extends Component {
 
 class Child extends Component {
   // 初次渲染的时候不会执行，只有在已挂载的组件接收新的props时，才会执行
-  UNSAFE_componentWillReceiveProps(nextProps) {
-    console.log('componentWillReceiveProps', nextProps);
-  }
+  // UNSAFE_componentWillReceiveProps(nextProps) {
+  //   console.log('componentWillReceiveProps', nextProps);
+  // }
+
   componentWillUnmount() {
     console.log('componentWillUnmount');
   }
