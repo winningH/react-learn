@@ -3,8 +3,14 @@ import TopBar from './TopBar'
 import BottomBar from './BottomBar'
 
 export default class Layout extends Component {
+  // sendMsgToParent = () => {
+  //   this.props.parent.getMsgFromChild(this, {
+  //     title: 'to parent',
+  //     cotent: 'child msg'
+  //   })
+  // }
   sendMsgToParent = () => {
-    this.props.parent.getMsgFromChild(this, {
+    this.props.parent({
       title: 'to parent',
       cotent: 'child msg'
     })
