@@ -13,6 +13,7 @@ import ErrorPage from './router/ErrorPage';
 // import ReactReduxPage from './pages/ReactReduxPage'
 import PureComponentPage from './pages/PureComponentPage';
 import HookComponent from './pages/HookComponent';
+import CustomHookPage from './pages/CustomHookPage'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       {/* <ReactReduxPage /> */}
       <PureComponentPage />
       <HookComponent />
+      <CustomHookPage />
 
       <Router>
         <Link to="/home">首页</Link>
