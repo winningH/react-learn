@@ -11,9 +11,11 @@ import ErrorPage from './router/ErrorPage';
 // import LifeCyclePage from './pages/LifeCyclePage'
 // import ReduxPage from './pages/ReduxPage'
 // import ReactReduxPage from './pages/ReactReduxPage'
-import PureComponentPage from './pages/PureComponentPage';
-import HookComponent from './pages/HookComponent';
-import CustomHookPage from './pages/CustomHookPage'
+// import PureComponentPage from './pages/PureComponentPage';
+// import HookComponent from './pages/HookComponent';
+// import CustomHookPage from './pages/CustomHookPage'
+import UseMemoPage from './pages/UseMemoPage'
+import UseCallbackPage from './pages/UseCallbackPage'
 
 function App() {
   return (
@@ -26,9 +28,11 @@ function App() {
       {/* <LifeCyclePage /> */}
       {/* <ReduxPage /> */}
       {/* <ReactReduxPage /> */}
-      <PureComponentPage />
-      <HookComponent />
-      <CustomHookPage />
+      {/* <PureComponentPage /> */}
+      {/* <HookComponent /> */}
+      {/* <CustomHookPage /> */}
+      <UseMemoPage />
+      <UseCallbackPage />
 
       <Router>
         <Link to="/home">首页</Link>
