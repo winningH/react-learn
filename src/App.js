@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import ContextPage from './pages/ContextPage'
 
 function App() {
   return (
     <div className="App">
-      react learn
+      <ContextPage />
     </div>
   );
 }
