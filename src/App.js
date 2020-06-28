@@ -11,7 +11,8 @@ import ErrorPage from './router/ErrorPage';
 // import LifeCyclePage from './pages/LifeCyclePage'
 // import ReduxPage from './pages/ReduxPage'
 // import ReactReduxPage from './pages/ReactReduxPage'
-import PureComponentPage from './pages/PureComponentPage'
+import PureComponentPage from './pages/PureComponentPage';
+import HookComponent from './pages/HookComponent';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       {/* <ReduxPage /> */}
       {/* <ReactReduxPage /> */}
       <PureComponentPage />
+      <HookComponent />
 
       <Router>
         <Link to="/home">首页</Link>
