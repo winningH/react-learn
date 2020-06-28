@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link, Redirect, Switch } from 'react-ro
 import HomePage from './router/HomePage';
 import UserPage from './router/UserPage';
 import ErrorPage from './router/ErrorPage';
-// import TestComponent from './TestComponent'
+import TestComponent from './TestComponent'
 // import ClassComponent from './pages/ClassComponent'
 // import FunctionComponent from './pages/FunctionComponent'
 // import SetStatePage from './pages/SetStatePage'
@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="app-header">React Learn</h1>
-      {/* <TestComponent /> */}
+      <TestComponent />
       {/* <ClassComponent /> */}
       {/* <FunctionComponent /> */}
       {/* <SetStatePage /> */}

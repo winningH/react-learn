@@ -32,7 +32,7 @@ class Child extends PureComponent {
     return (
       <div>
         <p>Child</p>
-        <button onClick={() => addClick()}>Child add</button>
+        <button onClick={addClick}>Child add</button>
       </div>
     )
   }
