@@ -5,6 +5,7 @@ import './App.css';
 import FunctionComponent from './pages/FunctionComponent'
 import SetStatePage from './pages/SetStatePage'
 import LifeCyclePage from './pages/LifeCyclePage'
+import ReduxPage from './pages/ReduxPage'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <FunctionComponent />
       <SetStatePage />
       <LifeCyclePage />
+      <ReduxPage />
     </div >
   );
 }
