@@ -14,7 +14,7 @@ import ErrorPage from './router/ErrorPage';
 // import PureComponentPage from './pages/PureComponentPage';
 // import HookComponent from './pages/HookComponent';
 // import CustomHookPage from './pages/CustomHookPage'
-import UseMemoPage from './pages/UseMemoPage'
+// import UseMemoPage from './pages/UseMemoPage'
 import UseCallbackPage from './pages/UseCallbackPage'
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
       {/* <PureComponentPage /> */}
       {/* <HookComponent /> */}
       {/* <CustomHookPage /> */}
-      <UseMemoPage />
+      {/* <UseMemoPage /> */}
       <UseCallbackPage />
 
       <Router>
