@@ -1,4 +1,7 @@
-import { createStore } from "redux";
+// import { createStore } from "redux";
+
+// 使用自定义redux
+import { createStore } from '../pages/myRedux'
 
 // 定义state初始化和修改规则
 function counterReducer(state, action) {

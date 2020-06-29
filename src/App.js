@@ -11,7 +11,7 @@ import ErrorPage from './router/ErrorPage';
 // import FunctionComponent from './pages/FunctionComponent'
 // import SetStatePage from './pages/SetStatePage'
 // import LifeCyclePage from './pages/LifeCyclePage'
-// import ReduxPage from './pages/ReduxPage'
+import ReduxPage from './pages/ReduxPage'
 // import ReactReduxPage from './pages/ReactReduxPage'
 // import PureComponentPage from './pages/PureComponentPage';
 // import HookComponent from './pages/HookComponent';
@@ -29,7 +29,7 @@ function App() {
       {/* <FunctionComponent /> */}
       {/* <SetStatePage /> */}
       {/* <LifeCyclePage /> */}
-      {/* <ReduxPage /> */}
+      <ReduxPage />
       {/* <ReactReduxPage /> */}
       {/* <PureComponentPage /> */}
       {/* <HookComponent /> */}
