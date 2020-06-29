@@ -9,6 +9,7 @@ export default class ReduxPage extends Component{
     })
   }
   render() {
+    console.log(store.getState());
     return (
       <div>
         <h3>ReduxPage</h3>

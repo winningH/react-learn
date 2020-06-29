@@ -13,11 +13,9 @@ function counterReducer(state, action) {
     case 'reset': 
       return { num: action.payload }
     default:
-      return { num: 0 }
+      return { num: 10 }
   }
 }
-const store = createStore(counterReducer, {
-  num: 0
-})
+const store = createStore(counterReducer)
 
 export default store

@@ -1,5 +1,5 @@
-function createStore(reducer, initValue) {
-  let currentState = initValue ? initValue : null
+function createStore(reducer) {
+  let currentState;
   let currentListeners = []
 
   function getState() {
@@ -15,6 +15,8 @@ function createStore(reducer, initValue) {
     currentListeners.push(listener)
   }
 
+  // 初始值
+  dispatch({type: 'xxx/llll'})
   return {
     getState,
     dispatch,
