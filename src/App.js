@@ -6,12 +6,14 @@ import { BrowserRouter as Router, Route, Link, Redirect, Switch } from 'react-ro
 import HomePage from './router/HomePage';
 import UserPage from './router/UserPage';
 import ErrorPage from './router/ErrorPage';
+// import ContextPage from './pages/ContextPage'
+// import HocPage from './pages/HocPage'
 // import TestComponent from './TestComponent'
 // import ClassComponent from './pages/ClassComponent'
 // import FunctionComponent from './pages/FunctionComponent'
 // import SetStatePage from './pages/SetStatePage'
 // import LifeCyclePage from './pages/LifeCyclePage'
-import ReduxPage from './pages/ReduxPage'
+// import ReduxPage from './pages/ReduxPage'
 // import ReactReduxPage from './pages/ReactReduxPage'
 // import PureComponentPage from './pages/PureComponentPage';
 // import HookComponent from './pages/HookComponent';
@@ -19,17 +21,20 @@ import ReduxPage from './pages/ReduxPage'
 // import UseMemoPage from './pages/UseMemoPage'
 // import UseCallbackPage from './pages/UseCallbackPage'
 
+
 function App() {
   return (
     <div className="App">
       {/* <HomePage /> */}
       <h1 className="app-header">React Learn</h1>
+      {/* <ContextPage /> */}
+      {/* <HocPage></HocPage> */}
       {/* <TestComponent /> */}
       {/* <ClassComponent /> */}
       {/* <FunctionComponent /> */}
       {/* <SetStatePage /> */}
       {/* <LifeCyclePage /> */}
-      <ReduxPage />
+      {/* <ReduxPage /> */}
       {/* <ReactReduxPage /> */}
       {/* <PureComponentPage /> */}
       {/* <HookComponent /> */}
@@ -52,7 +57,8 @@ function App() {
         </Switch>
         
       </Router>
-    </div >
+      
+    </div>
   );
 }
 
