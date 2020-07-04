@@ -7,7 +7,7 @@ import HomePage from './router/HomePage';
 import UserPage from './router/UserPage';
 import ErrorPage from './router/ErrorPage';
 // import ContextPage from './pages/ContextPage'
-// import HocPage from './pages/HocPage'
+import HocPage from './pages/HocPage'
 // import TestComponent from './TestComponent'
 // import ClassComponent from './pages/ClassComponent'
 // import FunctionComponent from './pages/FunctionComponent'
@@ -28,7 +28,7 @@ function App() {
       {/* <HomePage /> */}
       <h1 className="app-header">React Learn</h1>
       {/* <ContextPage /> */}
-      {/* <HocPage></HocPage> */}
+      <HocPage></HocPage>
       {/* <TestComponent /> */}
       {/* <ClassComponent /> */}
       {/* <FunctionComponent /> */}
